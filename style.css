@@ -15,14 +15,13 @@
 
 .hero-header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 .header-logo {
-    font-size: 24px;
+    font-size: 2em;
     color: #F9FAF8;
-    margin-right: 125px;
 }
 
 .hero-links {
@@ -45,13 +44,14 @@ a {
     gap: 24px;
     padding: 85px 30px;
     justify-content: space-around;
-
 }
 
 .text-content {
     display: flex;
     flex-direction: column;
     gap: 9px;
+    flex-basis: 0;
+    margin-bottom: 1em;
 }
 
 .main-text {
@@ -79,8 +79,127 @@ a {
     border: none;
     width: 170px;
     font-size: 1em;
+    margin-top: 14px;
+    cursor: pointer;
 }
 
 img {
-    width: 150px;
+    height: 280px;
+    width: 450px;
+    border-radius: 20px;
+    border: 1px solid #1F2937;
+}
+
+#information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 48px;
+    padding: 48px;
+}
+
+#information h1 {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+    height: 320px;
+    width: 190px;
+}
+
+.box {
+    height: 180px;
+    width: 190px;
+    border: 4px solid #3882F6;
+    border-radius: 1em;
+}
+
+.card p{
+    margin-left: 1em;
+    padding: 0;
+    width: 160px;
+    font-size: 18px;
+    color: #a0a7b3;
+}
+
+#quote {
+    background-color: #eeeeee;
+    padding: 96px 180px;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.main-quote {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 100;
+    color: #595d61;
+    line-height: 150%;
+    display: flex;
+    justify-content: center;
+}
+
+.sub-quote {
+    font-size: 18px;
+    font-weight: 800;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+#contact-container {
+    padding: 96px 180px;
+}
+
+.contact-card {
+    background-color: #1F2937;
+    color: #f9faf8;
+    display: flex;
+    padding: 48px 64px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact h3 {
+    font-size: 24px;
+    margin-bottom: 1em;
+}
+
+.contact p {
+    font-size: 18px;
+}
+
+button {
+    font-size: 18px;
+    padding: 12px 24px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #02060a;
+    width: 160px;
+    height: 52px;
+    border-radius: 8px;
+    border: none;
+}
+
+footer {
+    display: flex;
+    background-color: #1F2937;
+    color: #f9faf8;
+    padding: 40px 0;
+    justify-content: center;
 }
